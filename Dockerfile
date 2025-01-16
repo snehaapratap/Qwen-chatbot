@@ -1,4 +1,4 @@
-FROM python:3
+FROM python
 
 RUN pip install torch
 RUN pip install transformers
@@ -7,4 +7,4 @@ RUN pip install accelerate
 
 COPY main.py ./
 
-ENTRYPOINT python3 main.py
+ENTRYPOINT python main.py
